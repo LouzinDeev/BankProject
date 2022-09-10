@@ -6,7 +6,7 @@
 #define MAX_USERS 10
 
 class Acount {
-protected :
+private :
 	std::string Name;
 	float Money;
 	float Limit;
