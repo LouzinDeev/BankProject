@@ -5,7 +5,7 @@
 #include <string>
 
 #include "Acount.h"
-Acount *Users = new Acount[MAX_USERS];
+Acount Users[MAX_USERS];
 
 
 void ShowAllUsers() {

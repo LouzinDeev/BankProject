@@ -41,14 +41,9 @@ void Acount::RegisterUser(const std::string name, int id) {
 		std::cout << "Este usuario ja esta definido, Informaçoes: \n";
 		Acount::ShowInfo();
 	}
-	else if (id > MAX_USERS) {
-		std::cout << "Usuarios somente de 0 a 50\n\n";
-	}
-	else {
-		Name = name;
-		Id = id;
-		Registered = true;
-	}
+	Name = name;
+	Id = id;
+	Registered = true;
 }
 
 void Acount::ShowInfo() {

@@ -6,13 +6,20 @@
 #define MAX_USERS 10
 
 class Acount {
-private :
-	std::string Name = "Desconhecido";
-	float Money = 0.0;
-	float Limit = 0.0;
-	int Id = 0;
-	bool Registered = false;
+protected :
+	std::string Name;
+	float Money;
+	float Limit;
+	int Id;
+	bool Registered;
 public:
+	Acount() {
+		Name = "Desconhecido";
+		Money = 0.0;
+		Limit = 0.0;
+		Id = 0;
+		Registered = false;
+	}
 		void RegisterUser(const std::string name, int id);
 		void SetMoney(const float quant);
 		void RemoveMoney(const float quant);
